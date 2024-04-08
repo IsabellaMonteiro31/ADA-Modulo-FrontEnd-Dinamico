@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Adicionar nova tarefa" required>
+
+            <button type="submit" onclick= "addTask()">Adicionar</button>
+            <!-- <button type="edit" onclick= "editTask()">Editar</button> -->
+            <button type="remove" onclick= "removeTask()">Remover</button>
+
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div id="dateTime"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
